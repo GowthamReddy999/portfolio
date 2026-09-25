@@ -89,15 +89,19 @@
   .btn-ghost { border: 1px solid var(--surface-border); color: var(--text); background: var(--surface); }
   .btn-ghost:hover { border-color: rgba(255,255,255,0.25); transform: translateY(-2px); }
 
+  .hero-photo { display: flex; justify-content: center; }
   .photo-frame {
-    position: relative; border-radius: 22px; padding: 3px;
-    background: linear-gradient(160deg, rgba(124,108,240,0.55), rgba(76,140,245,0.15) 60%, transparent);
+    position: relative; border-radius: 50%; padding: 4px;
+    width: 200px; height: 200px;
+    background: linear-gradient(160deg, rgba(124,108,240,0.7), rgba(76,140,245,0.25) 60%, transparent);
+    box-shadow: 0 20px 50px -18px rgba(76,140,245,0.45);
   }
   .photo-inner {
-    border-radius: 20px; overflow: hidden; background: var(--bg-2);
+    border-radius: 50%; overflow: hidden; background: var(--bg-2);
     border: 1px solid rgba(255,255,255,0.08);
+    width: 100%; height: 100%;
   }
-  .photo-inner img { width: 100%; height: 100%; object-fit: cover; aspect-ratio: 4/5; }
+  .photo-inner img { width: 100%; height: 100%; object-fit: cover; aspect-ratio: 1/1; }
   .hero-anim { opacity: 0; animation: rise .8s cubic-bezier(.2,.8,.2,1) forwards; }
   .hero-anim.d1 { animation-delay: .05s; }
   .hero-anim.d2 { animation-delay: .15s; }
@@ -339,7 +343,7 @@
         <div class="edu-name">Lovely Professional University</div>
         <div class="edu-loc">B.Tech, Computer Science &amp; Engineering · Phagwara, Punjab</div>
       </div>
-      <div class="edu-score">CGPA 6.92</div>
+      <div class="edu-score"></div>
     </div>
     <div class="edu-item">
       <div class="edu-date mono">2022 — 2024</div>
